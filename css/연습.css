@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaplestoryOTFLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+iframe,
+th,
+td,
+a,
+select,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: "MaplestoryOTFBold";
+  font-weight: normal;
+  font-size: 15px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+div {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* ======== Calendar ======== */
+.container .my-calendar {
+  width: 700px;
+  margin: 30px;
+  text-align: center;
+  font-weight: 800;
+  border: 1px solid #ddd;
+  cursor: default;
+}
+.my-calendar .clicked-date {
+  border-radius: 25px;
+  margin-top: 136px;
+  float: left;
+  width: 42%;
+  padding: 46px 0 26px;
+  background: #ddd;
+}
+.my-calendar .calendar-box {
+  margin-top: 100px;
+  float: right;
+  width: 58%;
+  padding-left: 30px;
+}
+
+.clicked-date .cal-day {
+  font-size: 24px;
+}
+.clicked-date .cal-date {
+  font-size: 130px;
+}
+
+.ctr-box {
+  padding: 0 16px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.ctr-box .btn-cal {
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.ctr-box .btn-cal:after {
+  content: "<";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ctr-box .btn-cal.next {
+  float: right;
+}
+.ctr-box .btn-cal.next:after {
+  content: ">";
+}
+
+.cal-table {
+  width: 100%;
+}
+.cal-table th {
+  width: 14.2857%;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.cal-table td {
+  padding: 3px 0;
+  height: 50px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.cal-table td.day {
+  position: relative;
+  cursor: pointer;
+}
+.cal-table td.today {
+  background: #ffd255;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.day-active {
+  background: #ff8585;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.has-event:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffc107;
+}
+.choice {
+  width: 95%;
+  margin: auto;
+  margin-top: 550px;
+  min-height: 74px;
+  padding: 0 50px;
+  background-color: #f8f9fc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.choice_text {
+  font-size: 14px;
+  color: #555;
+  line-height: 74px;
+  margin-right: 20px;
+  position: relative;
+}
+.choice_text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.4rem;
+  background: url(../images/ico-caption.svg) center center/16px 16px no-repeat;
+  vertical-align: -0.3rem;
+  left: -5.5%;
+  top: 32%;
+}
+.choice_btn {
+  font-family: "MaplestoryOTFLight";
+  width: 150px;
+  height: 48px;
+  border: 1px solid #bcbcbc;
+  background-color: #00256c !important;
+  padding: 11px 11px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.choice_btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
+}
